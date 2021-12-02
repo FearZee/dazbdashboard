@@ -1,0 +1,23 @@
+.Logo {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding: 2rem;
+}
+
+.colorStripe {
+    height: 3rem;
+    background-image: linear-gradient(
+            to right,
+            #6CAC2E,
+            #6CAC2E 20%,
+            #006A24 20%,
+            #00A3DA 50%,
+            #81D1EF 50%,
+            #A1DCF3 75%,
+            #056BB7 75%
+    );
+    background-size: 100% 6px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
