@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from '@mui/material/styles';
+import {CssBaseline} from "@mui/material";
+import theme from "./Theme";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+      <CssBaseline>
+          <App />
+      </CssBaseline>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

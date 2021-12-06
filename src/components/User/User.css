@@ -1,7 +1,9 @@
-.user-content{
+.container{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     color: black;
-    margin-top: 5%;
+    margin: 5% 5%;
 }
 
 .fachbereich{
@@ -9,12 +11,19 @@
     color: grey;
 }
 
+.usertext{
+    margin-left: 5%;
+}
+
 .name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
     display: block;
     width: auto;
 }
 
 .avatar {
-    width: 10%;
-    border-radius: 50%;
+    width: 15%;
+    border-radius: 100%;
 }
