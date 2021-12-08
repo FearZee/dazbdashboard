@@ -15,6 +15,7 @@ export default function Navigation(){
             height:{
                 xs: 225,
             },
+            mb: 9,
         }}>
             <Card variant="outlined" sx={{
                 mx: 2,

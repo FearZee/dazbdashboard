@@ -6,6 +6,7 @@ import Notifications from "./components/Notification/Notifications";
 import Phonebook from "./components/Phonebook/Phonebook";
 import {Box} from "@mui/material";
 import Navigation from "./components/Navigation/Navigation";
+import NavBar from "./components/NavBar/Navbar";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         flexDirection: 'row',
       }}>
         <Notifications/>
-        <Phonebook></Phonebook>
+        <Phonebook/>
       </Box>
         <Navigation/>
+        <NavBar/>
     </div>
   );
 }
