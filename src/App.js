@@ -4,12 +4,13 @@ import User from "./components/User/User"
 import UserData from "./components/UserData/UserData";
 import Notifications from "./components/Notification/Notifications";
 import Phonebook from "./components/Phonebook/Phonebook";
-import {Box} from "@mui/material";
+import {Box, ScopedCssBaseline} from "@mui/material";
 import Navigation from "./components/Navigation/Navigation";
 import NavBar from "./components/NavBar/Navbar";
 
 function App() {
   return (
+      <ScopedCssBaseline enableColorScheme>
     <div className="App">
       <Header/>
         <User avatar={"/avatar.jpg"} bereich={'Pflegekraft'} name={'Max Mustermann'}/>
@@ -24,6 +25,7 @@ function App() {
         <Navigation/>
         <NavBar/>
     </div>
+      </ScopedCssBaseline>
   );
 }
 

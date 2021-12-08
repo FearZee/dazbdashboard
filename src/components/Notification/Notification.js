@@ -37,7 +37,6 @@ export default function Notification({desc, day, time}) {
                     my: 1,
                 }}>
                     <Box sx={{
-                        display: 'relative'
                     }}>
                         <Box sx={{
                             fontSize: 14,
@@ -55,6 +54,7 @@ export default function Notification({desc, day, time}) {
                         width: 40,
                         height: 40,
                         color: 'green',
+
                     }}/>
                 </Box>
             </Card>
