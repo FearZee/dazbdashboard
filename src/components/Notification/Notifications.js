@@ -10,7 +10,7 @@ export default function Notifications({desc, time, day}){
             height:{
                 xs: 225,
             },
-            mr:2,
+            mr:1,
             ml:2,
             my:2,
             p:1,
