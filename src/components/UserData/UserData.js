@@ -1,23 +1,49 @@
 import './UserData.css'
-import {Card} from "@mui/material";
+import {Box, Card, Typography} from "@mui/material";
 
 function UserData({percent, satz}) {
+
+    let ccolor = "red"
 
     function handleClick(){
         console.log('clicked')
     }
 
     return(
-        <div className={"UserData"}>
+        <Box sx={{
+            width:{
+                xs: 375,
+            },
+            height:{
+
+            }
+        }}>
             <Card variant="outlined" onClick={handleClick}
                 sx={{
                     mx:2,
                 }}>
-                <h6>Meine Daten</h6>
-                <h1>{percent}%</h1>
-                <p>{satz}</p>
+                <Box>
+                    <Typography variant={'subtitle1'} sx={{
+                        mt: 1,
+                        mx: 2,
+                        fontWeight: 600,
+                    }}>Meine Daten</Typography>
+                    <Typography variant={'h2'} sx={{
+                        fontWeight: 700,
+                        color: ccolor,
+                        textAlign: 'center',
+                        fontSize: 75,
+                    }}>{percent}%</Typography>
+                    <Typography variant={'body2'} sx={{
+                        mx: 2,
+                        fontSize: 12,
+                        mb: 1,
+                        color: ccolor,
+                        fontWeight: 450,
+                    }}>{satz}</Typography>
+                </Box>
             </Card>
-        </div>
+        </Box>
     )
 }
 

@@ -5,6 +5,7 @@ import UserData from "./components/UserData/UserData";
 import Notifications from "./components/Notification/Notifications";
 import Phonebook from "./components/Phonebook/Phonebook";
 import {Box} from "@mui/material";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Notifications/>
         <Phonebook></Phonebook>
       </Box>
+        <Navigation/>
     </div>
   );
 }

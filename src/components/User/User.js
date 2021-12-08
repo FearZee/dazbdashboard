@@ -1,15 +1,24 @@
 import "./User.css"
-import {Avatar} from "@mui/material";
+import {Avatar, Box, Typography} from "@mui/material";
 
 function User({name, bereich, avatar}){
     return (
-        <div className={'container'}>
-            <Avatar alt={name} src="/avatar.jpg" />
-            <div className={'usertext'}>
-                <h1 className={'name'}>{name}</h1>
-                <l className={'fachbereich'}>{bereich}</l>
-            </div>
-        </div>
+        <Box sx={{
+            display: 'flex',
+            my: 2,
+            mx: 2,
+        }}>
+            <Avatar alt={name} src="/avatar.jpg" sx={{
+                width: 60,
+                height: 60,
+            }}/>
+            <Box sx={{
+                mx:1,
+            }}>
+                <Typography variant={'h6'}>{name}</Typography >
+                <Typography vatiant={'caption'}>{bereich}</Typography>
+            </Box>
+        </Box>
     )
 }
 

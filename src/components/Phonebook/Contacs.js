@@ -2,6 +2,11 @@ import {Avatar, Box, Button, Card, Typography} from "@mui/material";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export default function Contacts({name, bereich, nummer}){
+
+    function handleCall(){
+        window.open(`tel:${nummer}`) // Vodafone Kundenservice
+    }
+
     return(
         <Typography  className={"Notification"}>
             <Card variant="outlined"
@@ -45,7 +50,7 @@ export default function Contacts({name, bereich, nummer}){
                                 textAlign: 'left',
                             }}>{bereich}</Box>
 
-                            <Button color="success" variant="contained" size="small" sx={{
+                            <Button onClick={handleCall} color="success" variant="contained" size="small" sx={{
                                 width:{
                                     // xs: 125,
                                 },

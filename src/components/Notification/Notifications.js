@@ -1,7 +1,16 @@
 import Notification from "./Notification";
 import {Card} from "@mui/material";
 
-export default function Notifications({desc, time, day}){
+export default function Notifications(){
+    const testNotification = [{
+        desc: 'Termin bei Radiologie',
+        time: '12:00',
+        day: '12.11.2021'
+    },{
+        desc: 'Termin: diagnostische Station',
+        time: '12:00',
+        day: '13.11.2021'
+    }]
     return(
         <Card variant="outlined"  sx={{
             width:{
@@ -15,8 +24,9 @@ export default function Notifications({desc, time, day}){
             my:2,
             p:1,
         }}>
-            <Notification desc={"Termin bei Radiologie"} time={"12:00"} day={"12.11.2021"}/>
-            <Notification desc={"Termin bei Radiologie"} time={"12:00"} day={"12.11.2021"}/>
+            {testNotification.map((e) => (<Notification desc={e.desc} time={e.time} day={e.day}/>))}
+            {/*<Notification desc={"Termin bei Radiologie"} time={"12:00"} day={"12.11.2021"}/>*/}
+            {/*<Notification desc={"Termin bei Radiologie"} time={"12:00"} day={"12.11.2021"}/>*/}
         </Card>
     )
 }
