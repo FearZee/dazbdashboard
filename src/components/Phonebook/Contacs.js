@@ -13,8 +13,8 @@ export default function Contacts({name, bereich, nummer}){
             <Card variant="outlined"
                   sx={{
                       width:{
-                          // xs: screenWidth,
-                          s: 200,
+                          xs: screenWidth,
+                          // s: 200,
                       },
                       height:{
                           xs: 105,

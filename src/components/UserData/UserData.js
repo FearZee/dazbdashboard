@@ -1,4 +1,3 @@
-import './UserData.css'
 import {Box, Card, Typography} from "@mui/material";
 
 function UserData({percent, satz}) {

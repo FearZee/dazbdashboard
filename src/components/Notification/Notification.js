@@ -1,4 +1,3 @@
-import './Notification.css'
 import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
 import {Box, Card, Typography} from "@mui/material";
 
@@ -9,12 +8,12 @@ export default function Notification({desc, day, time}) {
     }
 
     return(
-        <Typography  className={"Notification"}>
+        <Typography  sx={{display: 'flex'}}>
             <Card variant="outlined" onClick={handleClick}
                   sx={{
                       width:{
-                          xs:175,
-                          s: 200,
+                          xs: window.screen.width/2,
+                          // s: 200,
                       },
                       height:{
                           xs: 100,

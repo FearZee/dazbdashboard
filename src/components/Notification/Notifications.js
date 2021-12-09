@@ -1,5 +1,5 @@
-import Notification from "./Notification";
 import {Card} from "@mui/material";
+import Notification from "./Notification";
 
 export default function Notifications(){
     const screenWidth = window.screen.width/2
