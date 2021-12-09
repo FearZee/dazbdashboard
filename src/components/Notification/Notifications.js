@@ -2,6 +2,8 @@ import Notification from "./Notification";
 import {Card} from "@mui/material";
 
 export default function Notifications(){
+    const screenWidth = window.screen.width/2
+
     const testNotification = [{
         desc: 'Termin bei Radiologie',
         time: '12:00',
@@ -14,7 +16,7 @@ export default function Notifications(){
     return(
         <Card variant="outlined"  sx={{
             width:{
-                xs: 175,
+                xs: screenWidth,
             },
             height:{
                 xs: 225,

@@ -24,9 +24,11 @@ export default function Notification({desc, day, time}) {
                       // ml:2,
                       // my:2,
                       mb:1,
+                      float: 'left',
+                      position: 'relative',
                   }}>
                 <Box sx={{
-                    fontSize: 14,
+                    fontSize: 12,
                     fontWeight: 600,
                     mx: 1,
                 }}>{desc}</Box>
@@ -34,17 +36,19 @@ export default function Notification({desc, day, time}) {
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'flex-end',
-                    my: 1,
+                    position: 'absolute',
+                    right: 0,
+                    bottom: 1,
                 }}>
                     <Box sx={{
                     }}>
                         <Box sx={{
-                            fontSize: 14,
+                            fontSize: 12,
                             fontWeight: 600,
                             textAlign: 'right',
                         }}>{time}</Box>
                         <Box sx={{
-                            fontSize: 14,
+                            fontSize: 12,
                             fontWeight: 600,
                             textAlign: 'right',
                         }}>{day}</Box>

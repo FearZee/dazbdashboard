@@ -1,15 +1,17 @@
 import {Box, Card} from "@mui/material";
 
 export default function Navigation(){
+    const screenWidth = window.screen.width
+
     const style = {
-        width: 375,
+        width: screenWidth,
         height: 225,
         border: 0,
     }
     return(
         <Box sx={{
             width:{
-                xs: 375,
+                xs: screenWidth,
                 x: 350,
             },
             height:{

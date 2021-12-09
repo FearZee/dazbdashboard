@@ -2,6 +2,7 @@ import {Box, Card} from "@mui/material";
 import Contacts from "./Contacs";
 
 export default function Phonebook(){
+    const screenWidth = window.screen.width/2
     const testContacts = [{
         name: "Dr. Hartwig",
         bereich: 'Radiologie',
@@ -14,7 +15,7 @@ export default function Phonebook(){
     return(
         <Box sx={{
             width:{
-                xs: 175,
+                xs: screenWidth,
             },
             height:{
                 xs: 225,

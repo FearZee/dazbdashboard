@@ -2,6 +2,7 @@ import './UserData.css'
 import {Box, Card, Typography} from "@mui/material";
 
 function UserData({percent, satz}) {
+    const screenWidth = window.screen.width
 
     let ccolor = "red"
 
@@ -12,7 +13,7 @@ function UserData({percent, satz}) {
     return(
         <Box sx={{
             width:{
-                xs: 375,
+                xs: screenWidth,
             },
             height:{
 

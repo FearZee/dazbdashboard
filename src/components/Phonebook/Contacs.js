@@ -2,6 +2,7 @@ import {Avatar, Box, Button, Card, Typography} from "@mui/material";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export default function Contacts({name, bereich, nummer}){
+    const screenWidth = window.screen.width/2
 
     function handleCall(){
         window.open(`tel:${nummer}`) // Vodafone Kundenservice
@@ -12,7 +13,7 @@ export default function Contacts({name, bereich, nummer}){
             <Card variant="outlined"
                   sx={{
                       width:{
-                          xs: 175,
+                          // xs: screenWidth,
                           s: 200,
                       },
                       height:{
